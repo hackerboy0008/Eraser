@@ -247,11 +247,11 @@ class Bot(discord.Client):
             return
 
          
-       ''' if message.content.lower() == "run":
+        if message.content.lower() == "role":
           await message.delete()
           if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
-              embed = discord.Embed(title="**__Runner Name__ = {member.name}#{member.discriminator}**", color=0x0FF14)
-              await message.channel.send(embed=embed)'''
+              embed = discord.Embed(title="**__Rule Name__ = *runner*", color=0x0FF14)
+              await message.channel.send(embed=embed)
           
 
         # process votes
