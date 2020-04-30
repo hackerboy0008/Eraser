@@ -204,8 +204,8 @@ class Bot(discord.Client):
         #self.embed.set_field_at(2, name="**__OPTION 3__**", value="**{0}.00**{1}".format(lst_scores[2], three_check))
         #self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/621954596402888724/657871070841405440/GIF-191030_000606.gif")
         #self.embed.set_footer(text='©With❤by『Dèv |༒☬A̴t̴a̴n̴u̴A̴D☬༒』#2471',icon_url='https://cdn.discordapp.com/attachments/621954596402888724/648951259251867681/GIF-191125_094448.gif')
-        self.embed.set_field_at(1, name="**Correct Answer**", value=right_answer, inline=True) 
-        self.embed.set_field_at(2, name="**Erase Answer**", value=not_answer, inline=True) 
+        self.embed.set_field_at(1, name="**Correct Answer**", value=right_answer) 
+        self.embed.set_field_at(2, name="**Erase Answer**", value=not_answer) 
 
 
         if self.embed_msg is not None:
@@ -238,9 +238,9 @@ class Bot(discord.Client):
                 await self.update_embeds()
                 self.embed_msg = \
                     await message.channel.send('',embed=self.embed)
-                await self.embed_msg.add_reaction("✅")
-                await self.embed_msg.add_reaction("💯")
-                await self.embed_msg.add_reaction("❌")
+                await self.embed_msg.add_reaction("")
+                await self.embed_msg.add_reaction("")
+                await self.embed_msg.add_reaction("")
                 self.embed_channel_id = message.channel.id
             else:
                 await message.channel.send("**Fuck!** You Not Have permission To Use This **cmd!** :stuck_out_tongue_winking_eye:")
