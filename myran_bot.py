@@ -204,8 +204,8 @@ class Bot(discord.Client):
         #self.embed.set_field_at(2, name="**__OPTION 3__**", value="**{0}.00**{1}".format(lst_scores[2], three_check))
         #self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/621954596402888724/657871070841405440/GIF-191030_000606.gif")
         #self.embed.set_footer(text='©With❤by『Dèv |༒☬A̴t̴a̴n̴u̴A̴D☬༒』#2471',icon_url='https://cdn.discordapp.com/attachments/621954596402888724/648951259251867681/GIF-191125_094448.gif')
-        self.embed.set_field_at(1, name="**Correct Answer**", value=right_answer) 
-        self.embed.set_field_at(2, name="**Erase Answer**", value=not_answer) 
+        self.embed.set_field_at(0, name="**Correct Answer**", value=right_answer) 
+        self.embed.set_field_at(1, name="**Erase Answer**", value=not_answer) 
 
 
         if self.embed_msg is not None:
