@@ -130,6 +130,7 @@ class Bot(discord.Client):
         self.embed.add_field(name="**Correct Answer**", value="0", inline=False)
         self.embed.add_field(name="**Erase Answer**", value="0", inline=False)
         self.embed.set_footer(text='Hq Eraser || Myran')
+        print(answer_scores)
         
 
         #await self.bot.add_reaction(embed,':spy:')
@@ -164,24 +165,24 @@ class Bot(discord.Client):
         if highest > 0:
             if answer == 1:
                 #one_check = ""
-                right_answer = " ``1️⃣`` <a:right:705156824550211616>"
+                right_answer = " ``1️⃣ ✅``"
             else:
                 #one_check = ""
-                not_answer = " ``1️⃣`` <:galat:695864984193859634>"
+                not_answer = " ``1️⃣ ❌``"
 
             if answer == 2:
                 #two_check = " "
-                right_answer = " ``2️⃣`` <a:right:705156824550211616>"
+                right_answer = " ``2️⃣ ✅``"
             else:
                 #one_check = ""
-                not_answer = " ``2️⃣`` <:galat:695864984193859634>"
+                not_answer = " ``2️⃣ ❌``"
 
             if answer == 3:
                 #three_check = "  "
-                right_answer = " ``3️⃣`` <a:right:705156824550211616>"
+                right_answer = " ``3️⃣ ✅``"
             else:
                 #one_check = ""
-                not_answer = " ``3️⃣`` <:galat:695864984193859634> "
+                not_answer = " ``3️⃣ ❌``"
      
 
             
