@@ -184,7 +184,7 @@ class Bot(discord.Client):
                 right_answer = ""
             else:
                 #one_check = ""
-                not_answer = "Erase :- 3️⃣"
+                not_answer = "Erase:- 3️⃣"
      
 
             
