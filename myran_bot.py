@@ -151,7 +151,7 @@ class Bot(discord.Client):
         #two_check = ""
         #three_check = ""
         #right_answer = "?"
-        not_answer = "?"
+        not_answer = "Erase:- <a:loading:692937850559135825>"
         
 
         lst_scores = list(self.answer_scores)
@@ -159,7 +159,7 @@ class Bot(discord.Client):
 
         highest = max(lst_scores)
         #right_answer = ' ? '
-        not_answer = ' ? '
+        not_answer = 'Erase:- <a:loading:692937850559135825>'
         lowest = min(lst_scores)
         answer = lst_scores.index(highest)+1
         #global wrong             
@@ -170,21 +170,21 @@ class Bot(discord.Client):
                 right_answer = ""
             else:
                 #one_check = ""
-                not_answer = "Not 1️⃣"
+                not_answer = "Erase:- 1️⃣"
 
             if answer == 2:
                 #two_check = " "
                 right_answer = ""
             else:
                 #one_check = ""
-                not_answer = " Not 2️⃣"
+                not_answer = "Erase:- 2️⃣"
 
             if answer == 3:
                 #three_check = "  "
                 right_answer = ""
             else:
                 #one_check = ""
-                not_answer = "Not 3️⃣"
+                not_answer = "Erase :- 3️⃣"
      
 
             
