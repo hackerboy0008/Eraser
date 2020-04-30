@@ -208,7 +208,7 @@ class Bot(discord.Client):
         #self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/621954596402888724/657871070841405440/GIF-191030_000606.gif")
         #self.embed.set_footer(text='©With❤by『Dèv |༒☬A̴t̴a̴n̴u̴A̴D☬༒』#2471',icon_url='https://cdn.discordapp.com/attachments/621954596402888724/648951259251867681/GIF-191125_094448.gif')
         #self.embed.set_field_at(0, name="**Correct Answer**", value=right_answer
-        print(right answer)
+        print(right_answer)
         self.embed.set_field_at(0, name="**Option**", value=not_answer) 
 
 
