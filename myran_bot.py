@@ -126,7 +126,7 @@ class Bot(discord.Client):
 
         # embed creation
         
-        self.embed=discord.Embed(title="",description = "",colour = discord.Colour.red())
+        self.embed=discord.Embed(title="Hq Eraser",description = "",colour = discord.Colour.red())
         self.embed.add_field(name="**Correct Answer**", value="0", inline=False)
         self.embed.add_field(name="**Erase Answer**", value="0", inline=False)
         self.embed.set_footer(text='Hq Eraser || Myran')
@@ -164,24 +164,24 @@ class Bot(discord.Client):
         if highest > 0:
             if answer == 1:
                 #one_check = ""
-                right_answer = "1️⃣ ✅"
+                right_answer = "``:one:`` ``✅``"
             else:
                 #one_check = ""
-                not_answer = "1️⃣ ❌ "
+                not_answer = "``:one:`` ``❌`` "
 
             if answer == 2:
                 #two_check = " "
-                right_answer = "2️⃣ ✅"
+                right_answer = "``two`` ``✅``"
             else:
                 #one_check = ""
-                not_answer = "2️⃣ ❌"
+                not_answer = "``two`` ``❌``"
 
             if answer == 3:
                 #three_check = "  "
-                right_answer = "3️⃣ ✅ "
+                right_answer = "``:three:`` ``✅`` "
             else:
                 #one_check = ""
-                not_answer = "3️⃣ ❌ "
+                not_answer = "``:three:`` ``❌`` "
      
 
             
