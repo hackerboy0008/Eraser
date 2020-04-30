@@ -201,14 +201,13 @@ class Bot(discord.Client):
             if answer == 3:
                 print(3,'{}'.format(lst_scores[3],))
                 #not_answer = " :three: <:galat:695864984193859634> "          
- 
-        #self.embed.set_field_at(0, name="**__OPTION 1__**", value="**{0}.00**{1}".format(lst_scores[0], one_check))
-        #self.embed.set_field_at(1, name="**__OPTION 2__**", value="**{0}.00**{1}".format(lst_scores[1], two_check))
-        #self.embed.set_field_at(2, name="**__OPTION 3__**", value="**{0}.00**{1}".format(lst_scores[2], three_check))
-        #self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/621954596402888724/657871070841405440/GIF-191030_000606.gif")
-        #self.embed.set_footer(text='©With❤by『Dèv |༒☬A̴t̴a̴n̴u̴A̴D☬༒』#2471',icon_url='https://cdn.discordapp.com/attachments/621954596402888724/648951259251867681/GIF-191125_094448.gif')
-        #self.embed.set_field_at(0, name="**Correct Answer**", value=right_answer
-        #print(right_answer)
+        #This is myran
+        #Myran can do enything
+        #See Myran will make the hq Eraser Bot with cool look & work
+        #Myran jab maga diya nahi cholo Myran ne bana liya
+        #Myran make the Eraser Bot with own knowledge 
+        #Myran is making more scripts you don't know
+        #github is https://www.github.com/myran0001
         self.embed.set_field_at(0, name="**Option**", value=not_answer) 
 
 
@@ -234,7 +233,7 @@ class Bot(discord.Client):
         if message.author == self.user or message.guild == None:
             return
 
-        if message.content.lower() == "h":
+        if message.content.lower() == "hq":
             await message.delete()
             if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
                 self.embed_msg = None
@@ -254,7 +253,7 @@ class Bot(discord.Client):
         if message.content.lower() == "role":
           await message.delete()
           if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
-              embed = discord.Embed(title="**__Rule Name__ = *runner*", color=0x0FF14)
+              embed = discord.Embed(title="**__Role Name__** = *runner*", color=0x0FF14)
               await message.channel.send(embed=embed)
           
 
