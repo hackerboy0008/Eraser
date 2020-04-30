@@ -164,40 +164,40 @@ class Bot(discord.Client):
         if highest > 0:
             if answer == 1:
                 #one_check = ""
-                right_answer = " :one: <a:right:705156824550211616>"
+                right_answer = " ``1️⃣`` <a:right:705156824550211616>"
             else:
                 #one_check = ""
-                not_answer = " :one: <:galat:695864984193859634>"
+                not_answer = " ``1️⃣`` <:galat:695864984193859634>"
 
             if answer == 2:
                 #two_check = " "
-                right_answer = " :two: <a:right:705156824550211616>"
+                right_answer = " ``2️⃣`` <a:right:705156824550211616>"
             else:
                 #one_check = ""
-                not_answer = " :two: <:galat:695864984193859634>"
+                not_answer = " ``2️⃣`` <:galat:695864984193859634>"
 
             if answer == 3:
                 #three_check = "  "
-                right_answer = " :three: <a:right:705156824550211616>"
+                right_answer = " ``3️⃣`` <a:right:705156824550211616>"
             else:
                 #one_check = ""
-                not_answer = " :three: <:galat:695864984193859634> "
+                not_answer = " ``3️⃣`` <:galat:695864984193859634> "
      
 
             
 
-        if lowest < 0:
-            if answer == 1:
+        #if lowest < 0:
+            #if answer == 1:
                 #one_cross = ""
-                not_answer = " :one: <:galat:695864984193859634> "
+                #not_answer = " :one: <:galat:695864984193859634> "
 
-            if answer == 2:
+            #if answer == 2:
                 #two_cross = ""
-                not_answer = " :two: <:galat:695864984193859634> "
+                #not_answer = " :two: <:galat:695864984193859634> "
 
-            if answer == 3:
+            #if answer == 3:
                 #three_cross = "" 
-                not_answer = " :three: <:galat:695864984193859634> "          
+                #not_answer = " :three: <:galat:695864984193859634> "          
  
         #self.embed.set_field_at(0, name="**__OPTION 1__**", value="**{0}.00**{1}".format(lst_scores[0], one_check))
         #self.embed.set_field_at(1, name="**__OPTION 2__**", value="**{0}.00**{1}".format(lst_scores[1], two_check))
