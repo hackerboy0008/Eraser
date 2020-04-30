@@ -189,17 +189,17 @@ class Bot(discord.Client):
 
             
 
-        #if lowest < 0:
-            #if answer == 1:
-                #one_cross = ""
+        if highest > 0:
+            if answer == 1:
+                print(1,'{}'.format(lst_scores[1],))
                 #not_answer = " :one: <:galat:695864984193859634> "
 
-            #if answer == 2:
-                #two_cross = ""
+            if answer == 2:
+                print(2,'{}'.format(lst_scores[2],)) 
                 #not_answer = " :two: <:galat:695864984193859634> "
 
-            #if answer == 3:
-                #three_cross = "" 
+            if answer == 3:
+                print(3,'{}'.format(lst_scores[3],))
                 #not_answer = " :three: <:galat:695864984193859634> "          
  
         #self.embed.set_field_at(0, name="**__OPTION 1__**", value="**{0}.00**{1}".format(lst_scores[0], one_check))
