@@ -230,7 +230,7 @@ class Bot(discord.Client):
         if message.author == self.user or message.guild == None:
             return
 
-        if message.content.lower() == "-lo":
+        if message.content.lower() == "hq":
             await message.delete()
             if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
                 self.embed_msg = None
@@ -238,20 +238,20 @@ class Bot(discord.Client):
                 await self.update_embeds()
                 self.embed_msg = \
                     await message.channel.send('',embed=self.embed)
-                await self.embed_msg.add_reaction("")
-                await self.embed_msg.add_reaction("")
-                await self.embed_msg.add_reaction("")
+                #await self.embed_msg.add_reaction("")
+                #await self.embed_msg.add_reaction("")
+                #await self.embed_msg.add_reaction("")
                 self.embed_channel_id = message.channel.id
             else:
                 await message.channel.send("**Fuck!** You Not Have permission To Use This **cmd!** :stuck_out_tongue_winking_eye:")
             return
 
          
-        if message.content.lower() == "run":
+       ''' if message.content.lower() == "run":
           await message.delete()
           if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
               embed = discord.Embed(title="**__Runner Name__ = {member.name}#{member.discriminator}**", color=0x0FF14)
-              await message.channel.send(embed=embed)
+              await message.channel.send(embed=embed)'''
           
 
         # process votes
