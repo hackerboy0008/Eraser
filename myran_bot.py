@@ -303,7 +303,7 @@ if __name__ == '__main__':
     update_event = multiprocessing.Event()
 
     # shared array with answer results
-    answer_scores = multiprocessing.Array(typecode_or_type='i', size_or_initializer=1)
+    answer_scores = multiprocessing.Array(typecode_or_type='i', size_or_initializer=4)
 
     p_bot = multiprocessing.Process(target=bot_with_cyclic_update_process, args=(update_event, answer_scores))
     p_selfbot = multiprocessing.Process(target=selfbot_process, args=(update_event, answer_scores))
