@@ -147,16 +147,16 @@ class Bot(discord.Client):
         #one_check = ""
         #two_check = ""
         #three_check = ""
-        right_answer = ""
-        not_answer = ""
+        right_answer = "?"
+        not_answer = "?"
         
 
         lst_scores = list(self.answer_scores)
         
 
         highest = max(lst_scores)
-        right_answer = ''
-        not_answer = ''
+        right_answer = '?'
+        not_answer = '?'
         lowest = min(lst_scores)
         answer = lst_scores.index(highest)+1
         #global wrong             
@@ -186,18 +186,18 @@ class Bot(discord.Client):
 
             
 
-        #if lowest < 0:
-            #if answer == 1:
+        if lowest < 0:
+            if answer == 1:
                 #one_cross = ""
-                #not_answer = "Not :one: "
+                not_answer = " :one: <:galat:695864984193859634> "
 
-           # if answer == 2:
+            if answer == 2:
                 #two_cross = ""
-                #not_answer = "Not :two: "
+                not_answer = " :two: <:galat:695864984193859634> "
 
-            #if answer == 3:
+            if answer == 3:
                 #three_cross = "" 
-               # not_answer = "Not :three: "          
+                not_answer = " :three: <:galat:695864984193859634> "          
  
         #self.embed.set_field_at(0, name="**__OPTION 1__**", value="**{0}.00**{1}".format(lst_scores[0], one_check))
         #self.embed.set_field_at(1, name="**__OPTION 2__**", value="**{0}.00**{1}".format(lst_scores[1], two_check))
