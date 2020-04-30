@@ -126,7 +126,7 @@ class Bot(discord.Client):
 
         # embed creation
         
-        self.embed=discord.Embed(title="Hq Eraser",description = "",colour = discord.Colour.red())
+        self.embed=discord.Embed(title="",description = "",colour = discord.Colour.red())
         self.embed.add_field(name="**Correct Answer**", value="0", inline=False)
         self.embed.add_field(name="**Erase Answer**", value="0", inline=False)
         self.embed.set_footer(text='Hq Eraser || Myran')
@@ -147,16 +147,16 @@ class Bot(discord.Client):
         #one_check = ""
         #two_check = ""
         #three_check = ""
-        right_answer = "?"
-        not_answer = "?"
+        right_answer = ""
+        not_answer = ""
         
 
         lst_scores = list(self.answer_scores)
         
 
         highest = max(lst_scores)
-        right_answer = '?'
-        not_answer = ' ? '
+        right_answer = ''
+        not_answer = ''
         lowest = min(lst_scores)
         answer = lst_scores.index(highest)+1
         #global wrong             
@@ -164,24 +164,24 @@ class Bot(discord.Client):
         if highest > 0:
             if answer == 1:
                 #one_check = ""
-                right_answer = "``:one:`` ``✅``"
+                right_answer = " :one: <a:right:705156824550211616>"
             else:
                 #one_check = ""
-                not_answer = "``:one:`` ``❌`` "
+                not_answer = " :one: <:galat:695864984193859634>"
 
             if answer == 2:
                 #two_check = " "
-                right_answer = "``two`` ``✅``"
+                right_answer = " :two: <a:right:705156824550211616>"
             else:
                 #one_check = ""
-                not_answer = "``two`` ``❌``"
+                not_answer = " :two: <:galat:695864984193859634>"
 
             if answer == 3:
                 #three_check = "  "
-                right_answer = "``:three:`` ``✅`` "
+                right_answer = " :three: <a:right:705156824550211616>"
             else:
                 #one_check = ""
-                not_answer = "``:three:`` ``❌`` "
+                not_answer = " :three: <:galat:695864984193859634> "
      
 
             
