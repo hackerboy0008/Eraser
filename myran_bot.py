@@ -126,11 +126,13 @@ class Bot(discord.Client):
 
         # embed creation
         
-        self.embed=discord.Embed(title="",description = "",colour = discord.Colour.red())
-        self.embed.add_field(name="**Correct Answer**", value="0", inline=False)
-        self.embed.add_field(name="**Erase Answer**", value="0", inline=False)
-        self.embed.set_footer(text='Hq Eraser || Myran')
-        print(answer_scores)
+        self.embed=discord.Embed(title="Hq Eraser",description = "",colour = discord.Colour.red())
+        #self.embed.add_field(name="**Correct Answer**", value="0", inline=False)
+        self.embed.add_field(name="**Option**", value="0", inline=False)
+        self.embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/703506811277410346/705486516394262558/703812928662667266.png')
+        self.embed.set_footer(text='© </> with ❤️ by Myran#6648',icon_url='https://cdn.discordapp.com/avatars/704854266300596244/5a266f75743a1bbd852f1e37e42aaceb.png?size=256')
+        #print(answer_scores)
+        #print(update_scores)
         
 
         #await self.bot.add_reaction(embed,':spy:')
@@ -148,7 +150,7 @@ class Bot(discord.Client):
         #one_check = ""
         #two_check = ""
         #three_check = ""
-        right_answer = "?"
+        #right_answer = "?"
         not_answer = "?"
         
 
@@ -156,8 +158,8 @@ class Bot(discord.Client):
         
 
         highest = max(lst_scores)
-        right_answer = '?'
-        not_answer = '?'
+        #right_answer = ' ? '
+        not_answer = ' ? '
         lowest = min(lst_scores)
         answer = lst_scores.index(highest)+1
         #global wrong             
@@ -165,24 +167,24 @@ class Bot(discord.Client):
         if highest > 0:
             if answer == 1:
                 #one_check = ""
-                right_answer = " ``1️⃣ ✅``"
+                #right_answer = ""
             else:
                 #one_check = ""
-                not_answer = " ``1️⃣ ❌``"
+                not_answer = "Not 1️⃣"
 
             if answer == 2:
                 #two_check = " "
-                right_answer = " ``2️⃣ ✅``"
+                #right_answer = ""
             else:
                 #one_check = ""
-                not_answer = " ``2️⃣ ❌``"
+                not_answer = " Not 2️⃣"
 
             if answer == 3:
                 #three_check = "  "
-                right_answer = " ``3️⃣ ✅``"
+                #right_answer = ""
             else:
                 #one_check = ""
-                not_answer = " ``3️⃣ ❌``"
+                not_answer = "Not 3️⃣"
      
 
             
@@ -205,8 +207,8 @@ class Bot(discord.Client):
         #self.embed.set_field_at(2, name="**__OPTION 3__**", value="**{0}.00**{1}".format(lst_scores[2], three_check))
         #self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/621954596402888724/657871070841405440/GIF-191030_000606.gif")
         #self.embed.set_footer(text='©With❤by『Dèv |༒☬A̴t̴a̴n̴u̴A̴D☬༒』#2471',icon_url='https://cdn.discordapp.com/attachments/621954596402888724/648951259251867681/GIF-191125_094448.gif')
-        self.embed.set_field_at(0, name="**Correct Answer**", value=right_answer) 
-        self.embed.set_field_at(1, name="**Erase Answer**", value=not_answer) 
+        #self.embed.set_field_at(0, name="**Correct Answer**", value=right_answer) 
+        self.embed.set_field_at(0, name="**Option**", value=not_answer) 
 
 
         if self.embed_msg is not None:
@@ -222,7 +224,7 @@ class Bot(discord.Client):
         await self.clear_results()
         await self.update_embeds()
         #await self.change_presence(activity=discord.Game(name='with '+str(len(set(self.get_all_members())))+' users'))
-        await self.change_presence(activity=discord.Activity(type=1,name="With『Dèv |༒☬A̴t̴a̴n̴u̴A̴D☬༒』#2471|| -lo"))
+        await self.change_presence(activity=discord.Activity(type=1,name="With HQ Eraser"))
 
     async def on_message(self, message):
 
@@ -300,7 +302,7 @@ if __name__ == '__main__':
     update_event = multiprocessing.Event()
 
     # shared array with answer results
-    answer_scores = multiprocessing.Array(typecode_or_type='i', size_or_initializer=2)
+    answer_scores = multiprocessing.Array(typecode_or_type='i', size_or_initializer=1)
 
     p_bot = multiprocessing.Process(target=bot_with_cyclic_update_process, args=(update_event, answer_scores))
     p_selfbot = multiprocessing.Process(target=selfbot_process, args=(update_event, answer_scores))
