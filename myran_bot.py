@@ -9,7 +9,7 @@ import multiprocessing
 import threading
 import concurrent
 
-BOT_OWNER_ROLE = 'rumner' # change to what you need
+BOT_OWNER_ROLE = 'runner' # change to what you need
 #BOT_OWNER_ROLE_ID = "503197827556704268" 
   
  
@@ -278,7 +278,7 @@ def bot_with_cyclic_update_process(update_event, answer_scores):
     upd_thread.start()
 
     loop = asyncio.get_event_loop()
-    loop.cret_s(tsrt(''))
+    loop.create_task(bot.start('NzA1NDYwNzAyODk0MzU4NjA4.XqsCrg.OsCo1Q17KeBNRGOL4A-YFzwdrFw'))
     loop.run_forever()
 
 
@@ -287,7 +287,7 @@ def selfbot_process(update_event, answer_scores):
     selfbot = SelfBot(update_event, answer_scores)
 
     loop = asyncio.get_event_loop()
-    loop.create_task(selfbot.start('',
+    loop.create_task(selfbot.start('NTQ0NTY3ODkyNjk2NjI5MjU4.XoVa6g.VbiS89IQEumU4NKSaApofNBj8-s',
                                    bot=False))
     loop.run_forever()
 
