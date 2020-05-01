@@ -170,21 +170,21 @@ class Bot(discord.Client):
                 right_answer = ""
             else:
                 #one_check = ""
-                not_answer = "Erase:- 1️⃣"
+                not_answer = "Erase:- 3️⃣"
 
             if answer == 2:
                 #two_check = " "
                 right_answer = ""
             else:
                 #one_check = ""
-                not_answer = "Erase:- 2️⃣"
+                not_answer = "Erase:- 1️⃣"
 
             if answer == 3:
                 #three_check = "  "
                 right_answer = ""
             else:
                 #one_check = ""
-                not_answer = "Erase:- 3️⃣"
+                not_answer = "Erase:- 2️⃣"
      
 
             
