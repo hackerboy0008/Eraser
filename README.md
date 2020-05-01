@@ -1,4 +1,4 @@
-# HQ Eraser ``bot``
+# HQ Eraser ``BoT``
 
 
 
