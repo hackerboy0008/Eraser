@@ -49,9 +49,9 @@ async def update_scores(content, answer_scores):
 
     else: # contains not or n
         if m[3] is None:
-            answer_scores[ind] -= nomarkscore
-        else:
             answer_scores[ind] -= markscore
+        #else:
+            #answer_scores[ind] -= markscore
 
     return True
 
@@ -104,9 +104,9 @@ class SelfBot(discord.Client):
 
             else: # contains not or n
                 if m[3] is None:
-                    self.answer_scores[ind] -= nomarkscore
-                else:
                     self.answer_scores[ind] -= markscore
+                #else:
+                    #self.answer_scores[ind] -= markscore
 
             return True
 
@@ -164,27 +164,27 @@ class Bot(discord.Client):
         answer = lst_scores.index(highest)+1
         #global wrong             
 
-        if highest > 0:
-            if answer == 1:
+        #if highest > 0:
+            #if answer == 1:
                 #one_check = ""
-                right_answer = ""
-            else:
+                #right_answer = ""
+            #else:
                 #one_check = ""
-                not_answer = ""
+                #not_answer = ""
 
-            if answer == 2:
+            #if answer == 2:
                 #two_check = " "
-                right_answer = ""
-            else:
+                #right_answer = ""
+            #else:
                 #one_check = ""
-                not_answer = ""
+                #not_answer = ""
 
-            if answer == 3:
+            #if answer == 3:
                 #three_check = "  "
-                right_answer = ""
-            else:
+                #right_answer = ""
+            #else:
                 #one_check = ""
-                not_answer = ""
+                #not_answer = ""
      
 
             
