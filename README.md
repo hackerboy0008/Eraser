@@ -3,6 +3,6 @@
 
 
 __Made by Myran__
-# [Error when put not/N 
-# Fix your self] 
+# [Error when put not/N] 
+# Fix your self
 
