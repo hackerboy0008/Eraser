@@ -1,6 +1,6 @@
 # HQ Eraser
-__``bot``__
+``bot``
 
-'''
-Made by Myran
-'''
+
+__Made by Myran__
+
