@@ -170,21 +170,21 @@ class Bot(discord.Client):
                 right_answer = ""
             else:
                 #one_check = ""
-                not_answer = "Erase:- 3️⃣"
+                not_answer = "Erase:- 1️⃣"
 
             if answer == 2:
                 #two_check = " "
                 right_answer = ""
             else:
                 #one_check = ""
-                not_answer = "Erase:- 1️⃣"
+                not_answer = "Erase:- 2️⃣"
 
             if answer == 3:
                 #three_check = "  "
                 right_answer = ""
             else:
                 #one_check = ""
-                not_answer = "Erase:- 2️⃣"
+                not_answer = "Erase:- 3️⃣"
      
 
             
@@ -200,6 +200,14 @@ class Bot(discord.Client):
 
             if answer == 3:
                 print(3,'{}'.format(lst_scores[3],))
+         
+        if lowest < 0:
+            if answer == 1:
+                not_answer = "Ersae:- 1️⃣"
+            if answer == 2:
+                not_answer = "Erase:- 2️⃣"
+            if answer == 3:
+                not_answer = "Erase:- 3️⃣"
                 #not_answer = " :three: <:galat:695864984193859634> "          
         #This is myran
         #Myran can do enything
